@@ -1,7 +1,7 @@
 import fastify from 'fastify'
-import GQL from 'fastify-gql'
+import GQL from 'mercurius'
 import { GraphQLUpload } from 'graphql-upload'
-import fastifyGQLUpload from '../index'
+import mercuriusGQLUpload from '../index'
 
 const schema = /* GraphQL */ `
   scalar Upload
@@ -16,12 +16,12 @@ const schema = /* GraphQL */ `
 export function build() {
   const app = fastify()
 
-  app.register(fastifyGQLUpload)
+  app.register(mercuriusGQLUpload)
 
   app.register(GQL, {
     schema,
     resolvers: {
-      Upload: GraphQLUpload as any,
+      Upload: GraphQLUpload,
       Query: {
         add: async (_, { x, y }) => {
           return x + y

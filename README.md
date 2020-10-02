@@ -1,13 +1,15 @@
-# fastify-gql-upload-ts
+# mercurius-upload
 
-Based on https://github.com/bmullan91/fastify-gql-upload but with **TypeScript support**, updated dependencies and updated syntax for **Fastify v3**:
+[graphql-upload](https://github.com/jaydenseric/graphql-upload) implementation plugin for [Fastify](https://www.fastify.io/) & [mercurius](https://github.com/mercurius-js/mercurius).
+
+Plugin made for **Fastify v3**:
 
 ## Install
 
 ```sh
-yarn add fastify-gql-upload-ts
+yarn add mercurius-upload
 # or
-npm i fastify-gql-upload-ts
+npm i mercurius-upload
 ```
 
 ## Usage
@@ -15,7 +17,7 @@ npm i fastify-gql-upload-ts
 Plugin options should conform to https://github.com/jaydenseric/graphql-upload#type-processrequestoptions
 
 ```js
-fastify.register(require('fastify-gql-upload-ts'), {
+fastify.register(require('mercurius-upload'), {
   // options passed to processRequest from graphql-upload
 })
 ```
@@ -23,17 +25,17 @@ fastify.register(require('fastify-gql-upload-ts'), {
 > or
 
 ```ts
-import FastifyGQLUpload from 'fastify-gql-upload-ts'
+import MercuriusGQLUpload from 'mercurius-upload'
 
 // ...
 
-fastify.register(FastifyGQLUpload)
+fastify.register(MercuriusGQLUpload)
 ```
 
 ## Example
 
 ```js
-const GQL = require('fastify-gql')
+const GQL = require('mercurius')
 const { GraphQLUpload } = require('graphql-upload')
 const fs = require('fs')
 const util = require('util')
@@ -74,7 +76,7 @@ const resolvers = {
 }
 
 module.exports = function (fastify, options, done) {
-  fastify.register(require('fastify-gql-upload-ts'))
+  fastify.register(require('mercurius-upload'))
 
   fastify.register(GQL, {
     schema,

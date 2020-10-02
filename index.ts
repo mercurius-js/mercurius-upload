@@ -9,7 +9,7 @@ declare module 'fastify' {
   }
 }
 
-const fastifyGQLUpload: FastifyPluginCallback<UploadOptions> = (
+const mercuriusGQLUpload: FastifyPluginCallback<UploadOptions> = (
   fastify,
   options = {},
   done
@@ -30,7 +30,7 @@ const fastifyGQLUpload: FastifyPluginCallback<UploadOptions> = (
   done()
 }
 
-export default fp(fastifyGQLUpload, {
+export default fp(mercuriusGQLUpload, {
   fastify: '>= 3.x',
-  name: 'fastify-gql-upload',
+  name: 'mercurius-upload',
 })

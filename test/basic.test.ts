@@ -2,7 +2,7 @@ import tap from 'tap'
 import FormData from 'form-data'
 import { build } from './build-server'
 
-tap.test('fastify-gql-upload - should work', async (t) => {
+tap.test('mercurius-upload - should work', async (t) => {
   const server = build()
   await server.ready()
 

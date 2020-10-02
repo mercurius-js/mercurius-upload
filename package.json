@@ -1,10 +1,10 @@
 {
-  "name": "fastify-gql-upload-ts",
-  "version": "1.1.0",
+  "name": "mercurius-upload",
+  "version": "1.1.1",
   "description": "Fastify plugin to support GraphQL uploads using graphql-upload",
   "keywords": [
     "fastify",
-    "fastify-gql",
+    "mercurius",
     "gql",
     "graphql",
     "upload",
@@ -12,13 +12,13 @@
     "files",
     "typescript"
   ],
-  "homepage": "https://github.com/PabloSzx/fastify-gql-upload-ts#readme",
+  "homepage": "https://github.com/PabloSzx/mercurius-upload#readme",
   "bugs": {
-    "url": "https://github.com/PabloSzx/fastify-gql-upload-ts/issues"
+    "url": "https://github.com/PabloSzx/mercurius-upload/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PabloSzx/fastify-gql-upload-ts.git"
+    "url": "git+https://github.com/PabloSzx/mercurius-upload.git"
   },
   "license": "ISC",
   "author": "PabloSzx",
@@ -28,21 +28,21 @@
     "dist"
   ],
   "scripts": {
-    "prepublish": "tsc",
+    "prepare": "tsc",
     "test": "tap --no-coverage test/*.test.ts"
   },
   "dependencies": {
-    "@types/graphql-upload": "^8.0.3",
-    "fastify-plugin": "^2.0.1",
+    "@types/graphql-upload": "^8.0.4",
+    "fastify-plugin": "^2.3.4",
     "graphql-upload": "^11.0.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.23",
-    "@types/tap": "^14.10.0",
-    "fastify": "^3.0.3",
-    "fastify-gql": "^5.0.1",
+    "@types/node": "^14.11.2",
+    "@types/tap": "^14.10.1",
+    "fastify": "^3.5.0",
     "form-data": "^3.0.0",
-    "tap": "^14.10.7",
-    "typescript": "^3.9.7"
+    "mercurius": "^6.0.0",
+    "tap": "^14.10.8",
+    "typescript": "^4.0.3"
   }
 }
