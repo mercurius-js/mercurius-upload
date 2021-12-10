@@ -9,7 +9,7 @@ specifiers:
   fastify-plugin: ^3.0.0
   form-data: ^4.0.0
   graphql: ^15.5.0
-  graphql-upload: ^12.0.0
+  graphql-upload: ^13.0.0
   mercurius: ^7.6.1
   tap: ^15.0.9
   ts-node: ^9.1.1
@@ -18,7 +18,7 @@ specifiers:
 dependencies:
   '@types/graphql-upload': 8.0.4
   fastify-plugin: 3.0.0
-  graphql-upload: 12.0.0_graphql@15.5.0
+  graphql-upload: 13.0.0_graphql@15.5.0
 
 devDependencies:
   '@types/node': 15.3.0
@@ -1348,18 +1348,17 @@ packages:
       lodash.mergewith: 4.6.2
     dev: true
 
-  /graphql-upload/12.0.0_graphql@15.5.0:
-    resolution: {integrity: sha512-ovZ3Q7sZ17Bmn8tYl22MfrpNR7nYM/DUszXWgkue7SFIlI9jtqszHAli8id8ZcnGBc9GF0gUTNSskYWW+5aNNQ==}
-    engines: {node: ^12.20 || >= 14.13}
+  /graphql-upload/13.0.0_graphql@15.5.0:
+    resolution: {integrity: sha512-YKhx8m/uOtKu4Y1UzBFJhbBGJTlk7k4CydlUUiNrtxnwZv0WigbRHP+DVhRNKt7u7DXOtcKZeYJlGtnMXvreXA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >= 16.0.0}
     peerDependencies:
-      graphql: 0.13.1 - 15
+      graphql: 0.13.1 - 16
     dependencies:
       busboy: 0.3.1
       fs-capacitor: 6.2.0
       graphql: 15.5.0
-      http-errors: 1.8.0
-      isobject: 4.0.0
-      object-path: 0.11.5
+      http-errors: 1.8.1
+      object-path: 0.11.8
     dev: false
 
   /graphql/15.5.0:
@@ -1429,15 +1428,15 @@ packages:
       toidentifier: 1.0.0
     dev: true
 
-  /http-errors/1.8.0:
-    resolution: {integrity: sha512-4I8r0C5JDhT5VkvI47QktDW75rNlGVsUf/8hzjCC/wkWI/jdTRmBb9aI7erSG82r1bjKY3F6k28WnsVxB1C73A==}
+  /http-errors/1.8.1:
+    resolution: {integrity: sha512-Kpk9Sm7NmI+RHhnj6OIWDI1d6fIoFAtFt9RLaTMRlg/8w49juAStsrBgp0Dp4OdxdVbRIeKhtCUvoi/RuAhO4g==}
     engines: {node: '>= 0.6'}
     dependencies:
       depd: 1.1.2
       inherits: 2.0.4
       setprototypeof: 1.2.0
       statuses: 1.5.0
-      toidentifier: 1.0.0
+      toidentifier: 1.0.1
     dev: false
 
   /http-signature/1.2.0:
@@ -1623,11 +1622,6 @@ packages:
   /isexe/2.0.0:
     resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
     dev: true
-
-  /isobject/4.0.0:
-    resolution: {integrity: sha512-S/2fF5wH8SJA/kmwr6HYhK/RI/OkhD84k8ntalo0iJjZikgq1XFvR5M8NPT1x5F7fBwCG3qHfnzeP/Vh/ZxCUA==}
-    engines: {node: '>=0.10.0'}
-    dev: false
 
   /isstream/0.1.2:
     resolution: {integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=}
@@ -2022,8 +2016,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /object-path/0.11.5:
-    resolution: {integrity: sha512-jgSbThcoR/s+XumvGMTMf81QVBmah+/Q7K7YduKeKVWL7N111unR2d6pZZarSk6kY/caeNxUDyxOvMWyzoU2eg==}
+  /object-path/0.11.8:
+    resolution: {integrity: sha512-YJjNZrlXJFM42wTBn6zgOJVar9KFJvzx6sTWDte8sWZF//cnjl0BxHNpfZx+ZffXX63A9q0b1zsFiBX4g4X5KA==}
     engines: {node: '>= 10.12.0'}
     dev: false
 
@@ -2698,6 +2692,12 @@ packages:
   /toidentifier/1.0.0:
     resolution: {integrity: sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==}
     engines: {node: '>=0.6'}
+    dev: true
+
+  /toidentifier/1.0.1:
+    resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
+    engines: {node: '>=0.6'}
+    dev: false
 
   /tough-cookie/2.5.0:
     resolution: {integrity: sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==}
