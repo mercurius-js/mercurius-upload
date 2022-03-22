@@ -5,7 +5,7 @@ import type { FastifyPluginCallback } from 'fastify'
 
 declare module 'fastify' {
   interface FastifyRequest {
-    isMultipart?: true
+    mercuriusUploadMulutipart?: true
   }
 }
 
@@ -15,12 +15,12 @@ const mercuriusGQLUpload: FastifyPluginCallback<UploadOptions> = (
   done
 ) => {
   fastify.addContentTypeParser('multipart', (req, _payload, done) => {
-    req.isMultipart = true
+    req.mercuriusUploadMulutipart = true
     done(null)
   })
 
   fastify.addHook('preValidation', async function (request, reply) {
-    if (!request.isMultipart) {
+    if (!request.mercuriusUploadMulutipart) {
       return
     }
 
