@@ -1,5 +1,5 @@
 import fp from 'fastify-plugin'
-import { processRequest, UploadOptions } from 'graphql-upload'
+import processRequest, { ProcessRequestOptions } from 'graphql-upload/processRequest.js'
 
 import type { FastifyPluginCallback } from 'fastify'
 
@@ -9,7 +9,7 @@ declare module 'fastify' {
   }
 }
 
-const mercuriusGQLUpload: FastifyPluginCallback<UploadOptions> = (
+const mercuriusGQLUpload: FastifyPluginCallback<ProcessRequestOptions> = (
   fastify,
   options,
   done
