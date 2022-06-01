@@ -1,6 +1,6 @@
 import fastify from 'fastify'
 import GQL from 'mercurius'
-import { GraphQLUpload } from 'graphql-upload'
+import GraphQLUpload from 'graphql-upload/GraphQLUpload.js'
 import mercuriusGQLUpload from '../index'
 
 const schema = /* GraphQL */ `

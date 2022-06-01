@@ -32,7 +32,6 @@
     "test": "tap --ts --100 test/*.test.ts"
   },
   "dependencies": {
-    "@types/graphql-upload": "^8.0.11",
     "fastify-plugin": "^3.0.1",
     "graphql-upload": "^15.0.1"
   },

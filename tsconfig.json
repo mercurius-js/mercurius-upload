@@ -64,7 +64,11 @@
 
     /* Advanced Options */
     "skipLibCheck": true /* Skip type checking of declaration files. */,
-    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+    "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
+
+    /* https://github.com/jaydenseric/graphql-upload/issues/282#issuecomment-1142691771 */
+    "allowJs": true,
+    "maxNodeModuleJsDepth": 10
   },
   "include": ["index.ts"]
 }
