@@ -32,22 +32,22 @@
     "test": "tap --ts --100 test/*.test.ts"
   },
   "dependencies": {
-    "@types/graphql-upload": "^8.0.7",
-    "fastify-plugin": "^3.0.0",
+    "@types/graphql-upload": "^8.0.11",
+    "fastify-plugin": "^3.0.1",
     "graphql-upload": "^13.0.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.12",
-    "@types/tap": "^15.0.5",
+    "@types/node": "^16.11.39",
+    "@types/tap": "^15.0.7",
     "cross-env": "^7.0.3",
-    "fastify": "^3.24.1",
+    "fastify": "^4.0.1",
     "form-data": "^4.0.0",
-    "graphql": "^16.3.0",
-    "mercurius": "^9.7.0",
-    "prettier": "^2.5.1",
+    "graphql": "^16.5.0",
+    "mercurius": "^10.0.0",
+    "prettier": "^2.6.2",
     "tap": "^16.2.0",
-    "ts-node": "^10.8.0",
-    "typescript": "^4.7.2"
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
   },
   "peerDependencies": {
     "graphql": "0.13.1 - 16"
