@@ -39,7 +39,7 @@
     "@types/node": "^16.11.39",
     "@types/tap": "^15.0.7",
     "cross-env": "^7.0.3",
-    "fastify": "^4.0.1",
+    "fastify": "^3.29.0",
     "form-data": "^4.0.0",
     "graphql": "^16.5.0",
     "mercurius": "^10.0.0",
