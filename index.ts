@@ -33,7 +33,7 @@ const mercuriusGQLUpload: FastifyPluginCallback<ProcessRequestOptions> = (
 }
 
 export const mercuriusUpload = fp(mercuriusGQLUpload, {
-  fastify: '>= 3.x',
+  fastify: '>= 4.x',
   name: 'mercurius-upload',
 })
 
