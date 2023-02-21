@@ -1,8 +1,11 @@
+import * as util from 'util';
 import stream from 'stream';
 import fp from 'fastify-plugin'
 import processRequest, {
   ProcessRequestOptions,
 } from 'graphql-upload/processRequest.js'
+
+const finishedStream = util.promisify(stream.finished);
 
 import type { FastifyPluginCallback } from 'fastify'
 
@@ -35,7 +38,7 @@ const mercuriusGQLUpload: FastifyPluginCallback<ProcessRequestOptions> = (
       return
     }
 
-    await stream.promises.finished(request.raw)
+    await finishedStream(request.raw)
   })
 
   done()
