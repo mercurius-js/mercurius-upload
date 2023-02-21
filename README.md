@@ -2,7 +2,7 @@
 
 [graphql-upload](https://github.com/jaydenseric/graphql-upload) implementation plugin for [Fastify](https://www.fastify.io/) & [mercurius](https://github.com/mercurius-js/mercurius).
 
-Plugin made for **Fastify v3**:
+Plugin made for **Fastify v4**:
 
 ## Install
 
