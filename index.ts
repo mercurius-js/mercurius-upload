@@ -1,3 +1,4 @@
+import stream from 'stream';
 import fp from 'fastify-plugin'
 import processRequest, {
   ProcessRequestOptions,
@@ -27,6 +28,14 @@ const mercuriusGQLUpload: FastifyPluginCallback<ProcessRequestOptions> = (
     }
 
     request.body = await processRequest(request.raw, reply.raw, options)
+  })
+
+  fastify.addHook('onSend', async function (request) {
+    if (!request.mercuriusUploadMultipart) {
+      return
+    }
+
+    await stream.promises.finished(request.raw)
   })
 
   done()
