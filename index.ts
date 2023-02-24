@@ -1,11 +1,11 @@
-import * as util from 'util';
-import stream from 'stream';
+import * as util from 'util'
+import stream from 'stream'
 import fp from 'fastify-plugin'
 import processRequest, {
   ProcessRequestOptions,
 } from 'graphql-upload/processRequest.js'
 
-const finishedStream = util.promisify(stream.finished);
+const finishedStream = util.promisify(stream.finished)
 
 import type { FastifyPluginCallback } from 'fastify'
 
