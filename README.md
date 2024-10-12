@@ -2,7 +2,7 @@
 
 [graphql-upload-minimal](https://github.com/flash-oss/graphql-upload-minimal) implementation plugin for [Fastify](https://www.fastify.io/) & [mercurius](https://github.com/mercurius-js/mercurius).
 
-Plugin made for **Fastify v4**:
+Plugin made for **Fastify v5**:
 
 ## Install
 
