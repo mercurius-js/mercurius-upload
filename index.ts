@@ -18,7 +18,7 @@ const mercuriusGQLUpload: FastifyPluginCallback<UploadOptions> = (
   options,
   done,
 ) => {
-  fastify.addContentTypeParser('multipart', (req, _payload, done) => {
+  fastify.addContentTypeParser('multipart/form-data', (req, _payload, done) => {
     req.mercuriusUploadMultipart = true
     done(null)
   })
