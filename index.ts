@@ -43,7 +43,7 @@ const mercuriusGQLUpload: FastifyPluginCallback<UploadOptions> = (
 }
 
 export const mercuriusUpload = fp(mercuriusGQLUpload, {
-  fastify: '>= 4.x',
+  fastify: '5.x',
   name: 'mercurius-upload',
 })
 
